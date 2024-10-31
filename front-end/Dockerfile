@@ -1,5 +1,6 @@
 FROM node:14 AS build
 
+WORKDIR /ua-vlad/src/app
 COPY package*.json ./
 RUN npm install
 COPY . .
