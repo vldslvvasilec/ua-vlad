@@ -1,0 +1,131 @@
+.testimisials-content {
+    width: 96%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: var(--main-comments-color);
+    margin: 2% 0;
+    button {
+        text-align: center;
+        min-height: 38vh;
+        color: var(--main-comments-buttons-color);
+        cursor: pointer;
+        margin: 0 1%;
+        svg {
+            height: 3rem;
+            width: 3rem;
+        }
+        &:disabled {
+            color: var(--main-comments-buttons-color-dis);
+            cursor: default;
+        }
+    }
+}
+.comments-content {
+    width: 90%;
+    display: flex;
+    align-items: flex-start;
+    min-height: 38vh;
+    gap: 2%;
+}
+.comments-content-item {
+    width: 24%;
+    border: 1px solid var(--main-comments-border-color);
+    border-radius: 10px;
+    padding: 1%;
+    min-height: 38vh;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px var(--main-comments-form-button-box-shadow-color);
+    background-color: var(--bg-content);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+.about-us-comments-author {
+    color: var(--main-comments-author-color);
+    font-size: 1.1rem;
+}
+.comments-rating {
+    margin-top: 2%;
+    .MuiRating-icon {
+        font-size: 1.1rem;
+        svg {
+            fill: var(--main-comments-rating-on);
+        }
+    }
+    .MuiRating-iconEmpty {
+        svg {
+            fill: var(--main-comments-rating-off);
+        }
+    }
+}
+.comments-button-on {
+    margin-left: 2%;
+    text-wrap: nowrap;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+    color: var(--main-comments-button-text-on);
+}
+.comments-button-off {
+    margin-left: 2%;
+    text-wrap: nowrap;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+    color: var(--main-comments-button-text-off);
+}
+
+
+@media screen and (max-width: 1024px) {
+    .comments-content-item {
+        font-size: .8rem;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .testimisials-content {
+        width: 100%;
+        button {
+            svg {
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+    .about-us-comments-author {
+        font-size: .9rem;
+    }
+}
+@media screen and (max-width: 650px) {
+    .testimisials-content {
+        button {
+            min-height: 80vh;
+        }
+    }
+    .comments-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .comments-content-item {
+        width: 48%;
+        min-height: 41vh;
+        margin: 1% 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    .testimisials-content {
+        flex-direction: column;
+        align-items: center;
+        button {
+            min-height: 2vh;
+            transform: rotate(90deg);
+        }
+    }
+    .comments-content-item {
+        width: 100%;
+        min-height: 20vh;
+        margin: 2% 0;
+        padding: 2%;
+    }
+}

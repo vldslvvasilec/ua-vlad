@@ -1,0 +1,41 @@
+@import '../../../config/styles/animations.scss';
+.contactUs {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    transform: translateY(-100px);
+    animation: header-logo 1.2s ease forwards;
+    animation-delay: .4s;
+    a {
+        border: .5px solid var(--contactUs-border);
+        border-radius: 5px;
+        background-color: var(--contactUs-bg);
+        color: var(--navBar-text);
+        text-align: center;
+        font-size: larger;
+        font-weight: 600;
+        text-wrap: nowrap;
+        padding: 2% 5%;
+        transition: .3s;
+        &:hover {
+            background-color: var(--navBar-bg-hover);
+            color: var(--navBar-text-hover);
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .contactUs {
+        animation: header-logo-adaptive 1.2s ease forwards;
+        animation-delay: .6s;
+    }
+}
+@media screen and (max-width: 425px) {
+    .contactUs {
+        a {
+            font-size: large;
+        }
+    }
+}

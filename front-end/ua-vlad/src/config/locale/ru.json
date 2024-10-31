@@ -1,0 +1,87 @@
+{
+  "languageNames": {
+    "en": "Английский",
+    "cs": "Чешский",
+    "ru": "Русский",
+    "uk": "Украинский"
+  },
+    "logoText": "Разработка сайтов",
+    "contact us": "Свяжитесь с нами",
+
+    "home": "Домашняя",
+    "portfolio": "Портфолио",
+    "services": "Услуги",
+    "testimonials": "Отзывы",
+    "contacts": "Контакты",
+
+    "home-page-tittle1": "Ваш партнер в мире веб-разработки",
+    "home-page-description1": "От простых сайтов до сложных веб-приложений — мы воплощаем идеи в жизнь с использованием лучших технологий.",
+    "home-page-tittle2": "Создаем уникальные веб-решения для вашего бизнеса",
+    "home-page-description2": "Современные технологии, адаптивный дизайн и надёжный хостинг для успешного онлайн-присутствия.",
+    "home-page-tittle3": "Индивидуальные сайты на чистом коде",
+    "home-page-description3": "Создаем проекты с нуля, используя React, SCSS, Python, и обеспечиваем высокую производительность и надёжность.",
+
+    "works-tittle": "Наши проекты", 
+
+    "choose-us-tittle": "Почему выбирают нас?",
+    "choose-us-personalized-approach-tittle": "Индивидуальный подход",
+    "choose-us-personalized-approach-description": "Мы создаём сайты, которые идеально соответствуют вашим целям и требованиям, начиная с чистого кода.",
+    "choose-us-modern-technologies-tittle": "Современные технологии",
+    "choose-us-modern-technologies-description": "Используем передовые инструменты и технологии: React, SCSS, Python, PostgreSQL для создания высокоэффективных и масштабируемых решений.",
+    "choose-us-responsive-design-tittle": "Адаптивный дизайн",
+    "choose-us-responsive-design-description": "Ваш сайт будет отлично выглядеть и работать на любом устройстве благодаря продуманному адаптивному дизайну.",
+    "choose-us-multilingual-support-tittle": "Мультиязычность",
+    "choose-us-multilingual-support-description": "Разрабатываем сайты с поддержкой нескольких языков, чтобы ваш бизнес мог охватить глобальную аудиторию.",
+    "choose-us-reliable-hosting-tittle": "Надёжный хостинг",
+    "choose-us-reliable-hosting-description": "Деплоим проекты на AWS и GCP, обеспечивая безопасность и стабильность работы вашего сайта.",
+    "choose-us-SEO-optimization-tittle": "SEO-оптимизация",
+    "choose-us-SEO-optimization-description": "Мы учитываем последние тенденции SEO, чтобы ваш сайт был видим в поисковых системах и привлекал органический трафик.",
+    "choose-us-expertise-and-professionalism-tittle": "Опыт и профессионализм",
+    "choose-us-expertise-and-professionalism-description": "Сильная техническая экспертиза и внимание к деталям гарантируют высокое качество и долговечность ваших веб-решений.",
+
+    "show-more": "Показать ещё",
+
+    "contacts-tittle": "Наши контакты",
+    "about-us-form-tittle": "Свяжитесь с нами",
+    "about-us-form-name": "Имя:",
+    "about-us-form-email": "Email:",
+    "about-us-form-subject": "Сообщение:",
+    "about-us-form-submit": "Отправить",
+    "about-us-form-placeholder-name": "Введите ваше имя",
+    "about-us-form-placeholder-email": "Введите ваш email",
+    "about-us-form-placeholder-subject": "Введите ваше сообщение",
+    "about-us-form-error": "Поле должно быть заполнено",
+    "about-us-form-error-email": "Введите корректный email",
+
+    "about-us-error_sending": "Произошла ошибка при отправке сообщения.",
+    "about-us-email_not_exist": "Уважаемый {{name}}, e-mail {{email}} не существует.",
+    "about-us-message_delivered": "Уважаемый {{name}}, ваше сообщение успешно доставлено!",
+
+    "about-us-tittle": "Наша команда",
+    "about-us-ourTeam": "Наша IT-команда создает инновационные решения, внедряя современные технологии для вашего бизнеса.",
+    "about-us-name": "Владислав",
+    "about-us-prof": "Full-stack Web Developer",
+    "about-us-skills": "Навыки",
+    "about-us-button-on": "Подробнее",
+    "about-us-button-of": "Скрыть",
+    "about-us-comments-button-on": "Читать дальше",
+    "about-us-comments-button-off": "Показать меньше",
+    "about-us-comments-author": "Автор:",
+
+    "testimonials-tittle": "Отзывы о нас",
+    "testimonials-form-tittle": "Отправить отзыв",
+    "testimonials-form-name": "Имя:",
+    "testimonials-form-email": "Email:",
+    "testimonials-form-subject": "Сообщение:",
+    "testimonials-form-submit": "Отправить",
+    "testimonials-form-placeholder-name": "Введите ваше имя",
+    "testimonials-form-placeholder-email": "Введите ваш email",
+    "testimonials-form-placeholder-subject": "Введите ваше сообщение",
+    "testimonials-form-error": "Поле должно быть заполнено",
+    "testimonials-form-error-email": "Введите корректный email",
+
+    "testimonials-error_sending": "Произошла ошибка при отправке вашего отзыва.",
+    "testimonials-email_not_exist": "Уважаемый {{name}}, e-mail {{email}} не существует.",
+    "testimonials-message_delivered": "Уважаемый {{name}}, ваш отзыв успешно доставлен!"
+  }
+  

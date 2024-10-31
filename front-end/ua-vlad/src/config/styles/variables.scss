@@ -1,0 +1,177 @@
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: #F7F7F7;
+        --text-color: #222222;
+        --error-color: red;
+        --color-telegram: #0088cc;
+        --color-whats-app: #25d366;
+        --color-fb: #3b5998;
+        --color-inst: #e1306c;
+        --color-linkediln: #0077b5;
+        --color-mail: #dd4b39;
+
+        --loader-bg-color: #fff;
+        --loader-color: #3366ff;
+
+        --bg-content: rgba(247, 247, 247, 0.6);
+        --gloving-shadow: rgba(50, 50, 255, 0.8);
+
+        --header-bg: linear-gradient(to bottom right, #6699ff, #e6e6ff);
+        --logo-text: #0033сс;
+        --loader-contacts-color: #6699ff;
+        
+        --language-text: var(--logo-text);
+        --language-bg: #e6e6ff;
+        --language-bg-hover: #d9d9ff;
+        --language-text-hover: #000000;
+
+        --hamburgerIcon-color: #0033cc;
+        --toTop-color: var(--hamburgerIcon-color);
+        --toTop-border: var(--toTop-color);
+        --toTop-hover: #6699ff;
+
+        --navBar-text: var(--logo-text);
+        --navBar-bg-hover: #d9d9ff;
+        --navBar-text-hover: #000000;
+
+        --contactUs-border: #3366ff;
+        --contactUs-bg: #e6e6ff50;
+        --contactUs-bg-hover: #d9d9ff;
+
+        --header-minimal-menu: #fffffb6;
+
+        --main-home-text: var(--logo-text);
+        --maim-home-tittle-shadow: 0 0 5px #6699ff, 0 0 10px #6699ff, 0 0 20px #6699ff;
+
+        --main-services-text: var(--logo-text);
+        --main-services-svg: #6699ff;
+        --maim-services-tittle-shadow: var(--maim-home-tittle-shadow);
+
+        --main-portfolio-text-color: var(--logo-text);
+        --maim-portfolio-tittle-shadow: var(--maim-home-tittle-shadow);
+        --main-portfolio-rating-on: #ffff00;
+        --main-portfolio-rating-off: rgba(128, 128, 128, 0.5);
+        --main-portfolio-btn-border-color: #6699ff;
+        --main-portfolio-btn-color-hover: #3366ff;
+
+        --main-contacts-text: var(--logo-text);
+        --main-contacts-svg: #6699ff;
+        --maim-contacts-tittle-shadow: var(--maim-home-tittle-shadow);
+        --main-contacts-svg-text-hover: #3366ff;
+        --main-contacts-svg-scale: #3366ff;
+
+        --main-team-btn-border-color: #6699ff;
+        --main-team-btn-color-hover: #3366ff;
+        --main-team-user-skills-bg: rgba(128, 128, 128, .1);
+
+        --main-contacts-form-color: var(--logo-text);
+        --main-contacts-form-border-color: #6699ff;
+        --main-contacts-form-border-focus: #3366ff;
+        --main-contacts-form-button-box-shadow-color: rgba(0, 0, 0, 0.1);
+        --main-contacts-form-button-disabled-border-color: rgba(102, 153, 255, 0.5);
+        --main-contacts-form-error: var(--error-color);
+
+        --main-comments-color: var(--logo-text);
+        --main-comments-border-color: var(--logo-text);
+        --main-comments-author-color: #3366ff;
+        --main-comments-buttons-color: #3366ff;
+        --main-comments-buttons-color-dis: rgba(102, 153, 255, 0.5);
+        --main-comments-button-text-on: #3366ff;
+        --main-comments-button-text-off: #6699ff;
+        --main-comments-rating-on: #ffff00;
+        --main-comments-rating-off: rgba(128, 128, 128, 0.5);
+        --main-comments-form-button-box-shadow-color: rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-color: #000000;
+        --text-color: #ffffff;
+        --error-color: red;
+        --color-telegram: #0088cc;
+        --color-whats-app: #25d366;
+        --color-fb: #3b5998;
+        --color-inst: #e1306c;
+        --color-linkediln: #0077b5;
+        --color-mail: #dd4b39;
+
+        --loader-bg-color: #000;
+        --loader-color: #00ff00;
+
+        --bg-content: rgba(0, 0, 0, 0.5);
+        --gloving-shadow: rgba(0, 0, 255, 0.8);
+
+
+        --header-bg: linear-gradient(to bottom right, #005710, #404040);
+        --logo-text: #00ff00;
+        --loader-contacts-color: #00ff00;
+
+        --language-text: var(--logo-text);
+        --language-bg: #070707;
+        --language-bg-hover: #80ff80;
+        --language-text-hover: #000000;
+
+        --hamburgerIcon-color: var(--logo-text);
+        --toTop-color: var(--hamburgerIcon-color);
+        --toTop-border: var(--toTop-color);
+        --toTop-hover: #d3ff00;
+
+        --navBar-text: var(--logo-text);
+        --navBar-bg-hover: #d3ff00;
+        --navBar-text-hover: #000000;
+
+        --contactUs-border: #00ff00;
+        --contactUs-bg: #00000070;
+        --contactUs-bg-hover: #d3ff00;
+
+        --header-minimal-menu: #0f0f0fb6;
+
+        --main-home-text: var(--logo-text);
+        --maim-home-tittle-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 20px #00ff00;
+
+        --main-services-text: var(--logo-text);
+        --main-services-svg: #d3ff00;
+        --main-services-shadow-filter: drop-shadow(0 0 3px var(--main-services-text)) drop-shadow(0 0 3px var(--main-services-svg));
+        --maim-services-tittle-shadow: var(--maim-home-tittle-shadow);
+        
+        --main-portfolio-text-color: var(--logo-text);
+        --maim-portfolio-tittle-shadow: var(--maim-home-tittle-shadow);
+        --main-portfolio-rating-on: #d3ff00;
+        --main-portfolio-rating-off: rgba(255, 255, 255, 0.5);
+        --main-portfolio-btn-border-color: var(--logo-text);
+        --main-portfolio-btn-color-hover: #d3ff00;
+        --main-portfolio-btn-text-color: #000;
+
+        --main-contacts-text: var(--logo-text);
+        --main-contacts-svg: var(--logo-text);
+        --maim-contacts-tittle-shadow: var(--maim-home-tittle-shadow);
+        --main-contacts-svg-text-hover: #d3ff00;
+        --main-contacts-svg-scale: #d3ff00;
+        --main-contacts-shadow-filter: drop-shadow(0 0 1px var(--main-services-text)) drop-shadow(0 0 1px var(--main-services-svg));
+    
+        --main-team-btn-border-color: var(--logo-text);
+        --main-team-btn-color-hover: #d3ff00;
+        --main-team-btn-text-color: #000;
+        --main-team-user-skills-bg: rgba(0, 0, 0, .6);
+
+
+        --main-contacts-form-color: var(--logo-text);
+        --main-contacts-form-border-color: var(--logo-text);
+        --main-contacts-form-border-focus: #d3ff00;
+        --main-contacts-form-button-box-shadow-color: rgba(0, 0, 0, 0.1);
+        --main-contacts-form-button-disabled-border-color: rgba(0, 255, 0, 0.5);
+        --main-contacts-form-button-text-focus: #000;
+        --main-contacts-form-error: var(--error-color);
+
+        --main-comments-color: var(--logo-text);
+        --main-comments-border-color: var(--logo-text);
+        --main-comments-author-color: #fff;
+        --main-comments-buttons-color: var(--logo-text);
+        --main-comments-buttons-color-dis: #00ff0071;
+        --main-comments-button-text-on: #d3ff00;
+        --main-comments-button-text-off: #fff;
+        --main-comments-rating-on: #d3ff00;
+        --main-comments-rating-off: rgba(255, 255, 255, 0.5);
+    }
+}

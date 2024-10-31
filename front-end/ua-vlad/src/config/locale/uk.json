@@ -1,0 +1,87 @@
+{
+  "languageNames": {
+    "en": "Англійська",
+    "cs": "Чеська",
+    "ru": "Російська",
+    "uk": "Українська"
+  },
+  "logoText": "Розробка сайтів",
+  "contact us": "Зв'яжіться з нами",
+
+  "home": "Головна",
+  "portfolio": "Портфоліо",
+  "services": "Послуги",
+  "testimonials": "Відгуки",
+  "contacts": "Контакти",
+
+  "home-page-tittle1": "Ваш партнер у світі веб-розробки",
+  "home-page-description1": "Від простих сайтів до складних веб-додатків — ми втілюємо ідеї в життя, використовуючи найкращі технології.",
+  "home-page-tittle2": "Ми створюємо унікальні веб-рішення для вашого бізнесу",
+  "home-page-description2": "Сучасні технології, адаптивний дизайн і надійний хостинг для успішної онлайн-присутності.",
+  "home-page-tittle3": "Індивідуальні сайти на чистому коді",
+  "home-page-description3": "Створюємо проєкти з нуля, використовуючи React, SCSS, Python, забезпечуючи високу продуктивність і надійність.",
+
+  "works-tittle": "Наші проєкти", 
+
+  "choose-us-tittle": "Чому обирають нас?",
+  "choose-us-personalized-approach-tittle": "Індивідуальний підхід",
+  "choose-us-personalized-approach-description": "Ми створюємо сайти, які ідеально відповідають вашим цілям і вимогам, починаючи з чистого коду.",
+  "choose-us-modern-technologies-tittle": "Сучасні технології",
+  "choose-us-modern-technologies-description": "Ми використовуємо найсучасніші інструменти та технології: React, SCSS, Python, PostgreSQL для створення високопродуктивних і масштабованих рішень.",
+  "choose-us-responsive-design-tittle": "Адаптивний дизайн",
+  "choose-us-responsive-design-description": "Ваш сайт буде чудово виглядати і працювати на будь-якому пристрої завдяки продуманому адаптивному дизайну.",
+  "choose-us-multilingual-support-tittle": "Багатомовність",
+  "choose-us-multilingual-support-description": "Ми розробляємо сайти з підтримкою кількох мов, щоб ваш бізнес міг охопити глобальну аудиторію.",
+  "choose-us-reliable-hosting-tittle": "Надійний хостинг",
+  "choose-us-reliable-hosting-description": "Ми розгортаємо проекти на AWS і GCP, забезпечуючи безпеку та стабільність роботи вашого сайту.",
+  "choose-us-SEO-optimization-tittle": "SEO-оптимізація",
+  "choose-us-SEO-optimization-description": "Ми враховуємо останні тенденції SEO, щоб ваш сайт був видимим у пошукових системах і приваблював органічний трафік.",
+  "choose-us-expertise-and-professionalism-tittle": "Досвід та професіоналізм",
+  "choose-us-expertise-and-professionalism-description": "Сильна технічна експертиза і увага до деталей гарантують високу якість і довговічність ваших веб-рішень.",
+    
+  "show-more": "Показати ще",
+
+    "contacts-tittle": "Наші контакти",
+    "about-us-form-tittle": "Зв'яжіться з нами",
+    "about-us-form-name": "Ім'я:",
+    "about-us-form-email": "Email:",
+    "about-us-form-subject": "Повідомлення:",
+    "about-us-form-submit": "Відправити",
+    "about-us-form-placeholder-name": "Введіть своє ім'я",
+    "about-us-form-placeholder-email": "Введіть вашу електронну пошту",
+    "about-us-form-placeholder-subject": "Введіть ваше повідомлення",
+    "about-us-form-error": "Поле повинно бути заповнене",
+    "about-us-form-error-email": "Введіть коректний email",
+
+    "about-us-error_sending": "Сталася помилка під час відправлення повідомлення.",
+    "about-us-email_not_exist": "Шановний {{name}}, електронна пошта {{email}} не існує.",
+    "about-us-message_delivered": "Шановний {{name}}, ваше повідомлення успішно доставлено!",
+
+    "about-us-tittle": "Наша команда",
+    "about-us-ourTeam": "Наша IT-команда створює інноваційні рішення, впроваджуючи сучасні технології для вашого бізнесу.",
+    "about-us-name": "Владислав",
+    "about-us-prof": "Full-stack Web Developer",
+    "about-us-skills": "Навички",
+    "about-us-button-on": "Детальніше",
+    "about-us-button-of": "Сховати",
+    "about-us-comments-button-on": "Читати далі",
+    "about-us-comments-button-off": "Показати менше",
+    "about-us-comments-author": "Автор:",
+
+    "testimonials-tittle": "Відгуки про нас",
+    "testimonials-form-tittle": "Надіслати відгук",
+    "testimonials-form-name": "Ім'я:",
+    "testimonials-form-email": "Email:",
+    "testimonials-form-subject": "Повідомлення:",
+    "testimonials-form-submit": "Відправити",
+    "testimonials-form-placeholder-name": "Введіть своє ім'я",
+    "testimonials-form-placeholder-email": "Введіть вашу електронну пошту",
+    "testimonials-form-placeholder-subject": "Введіть ваше повідомлення",
+    "testimonials-form-error": "Поле повинно бути заповнене",
+    "testimonials-form-error-email": "Введіть коректний email",
+
+    "testimonials-error_sending": "Сталася помилка під час надсилання вашого відгуку.",
+    "testimonials-email_not_exist": "Шановний {{name}}, e-mail {{email}} не існує.",
+    "testimonials-message_delivered": "Шановний {{name}}, ваш відгук успішно надіслано!"
+  }
+  

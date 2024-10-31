@@ -1,0 +1,228 @@
+.testimonials {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-contacts-text);
+    margin: 2% 2%;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: var(--maim-contacts-tittle-shadow);
+    }
+}
+.testimonials-users {
+    width: 100%;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: var(--maim-contacts-tittle-shadow);
+    }
+}
+.testimonials-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-contacts-form-color);
+    margin: 2% 0;
+    .testimonials-form-details {
+        width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .testimonials-details-details {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            .testimonials-details-item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                &:first-child {
+                    margin-bottom: 3%;
+                }
+                label {
+                    margin-bottom: 2%;
+                    font-size: 1.2rem;
+                }
+                input {
+                    width: 100%;
+                    border: 1px solid var(--main-contacts-form-border-color);
+                    border-radius: 5px;
+                    padding: 2%;
+                    font-size: 1.1rem;
+                    color: var(--main-contacts-form-color);
+                    background-color: var(--bg-content);
+                    backdrop-filter: blur(2px);
+                    -webkit-backdrop-filter: blur(2px);
+                    &:focus {
+                        border-color: var(--main-contacts-form-border-focus);
+                        outline: none;
+                    }
+                }
+            }
+        }
+        .testimonials-form-text {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+            label {
+                font-size: 1.2rem;
+                margin-bottom: 2%;
+            }
+            textarea {
+                width: 100%;
+                height: 100%;
+                resize: none;
+                border: 1px solid var(--main-contacts-form-border-color);
+                border-radius: 5px;
+                padding: 2%;
+                font-size: 1.1rem;
+                color: var(--main-contacts-form-color);
+                overflow: hidden;
+                background-color: var(--bg-content);
+                backdrop-filter: blur(2px);
+                -webkit-backdrop-filter: blur(2px);
+                &:focus {
+                    border-color: var(--main-contacts-form-border-focus);
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    button {
+        width: 17%;
+        border-radius: 5px;
+        color: var(--main-contacts-form-color);
+        border: 3px solid var(--main-contacts-form-border-color);
+        font-size: 1.5rem;
+        padding: 0 1%;
+        text-align: center;
+        transition: .5s;
+        &:hover {
+            background-color: var(--main-contacts-form-border-focus);
+            color: var(--main-contacts-form-button-text-focus);
+            transform: scale(1.05);
+        }
+        &:disabled {
+            opacity: .5;
+            backdrop-filter: blur(5px);
+            box-shadow: 0 4px 6px var(--main-contacts-form-button-box-shadow-color);
+            border: 4px solid var(--main-contacts-form-button-disabled-border-color);
+            cursor: not-allowed;
+            &:hover {
+                transform: none;
+                background-color: inherit;
+                color: inherit;
+            }
+        }
+
+    }
+    .testimonials-form-error-input {
+        color: var(--main-contacts-form-error);
+    }
+}
+.comments-form-rating {
+    width: 100%;
+    margin: 1% 0;
+    .MuiRating-icon {
+        font-size: 2rem;
+        svg {
+            fill: var(--main-comments-rating-on);
+        }
+    }
+    .MuiRating-iconEmpty {
+        svg {
+            fill: var(--main-comments-rating-off);
+        }
+    }
+}
+.testimonials-form-error {
+    min-height: 40vh;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.error {
+        color: var(--main-contacts-form-error);
+    }
+    &.success {
+        color: var(--main-contacts-form-color);
+    }
+}
+@media screen and (max-width: 1024px) {
+    .testimonials-form {
+        .testimonials-form-details {
+            width: 90%;
+        }
+        button {
+            width: 22%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .testimonials-form {
+        button {
+            width: 28%;
+        }
+        .testimonials-form-error {
+            font-size: .9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .testimonials-form {
+        .testimonials-form-details {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .testimonials-details-details {
+                width: 100%;
+                .testimonials-details-item {
+                    label {
+                        font-size: 1rem;
+                    }
+                    input {
+                        font-size: .9rem;
+                    }
+                }
+            }
+            .testimonials-form-text {
+                width: 100%;
+                label {
+                    font-size: 1rem;
+                }
+                textarea {
+                    font-size: .9rem;
+                }
+            }
+        }
+        button {
+            width: 40%;
+        }
+        .testimonials-form-error {
+            font-size: .9rem;
+        }
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .testimonials-form {
+        button {
+            width: 60%;
+        }
+    }
+    .comments-form-rating {
+        margin: 4% 0;
+        .MuiRating-icon {
+            font-size: 1.5rem;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.hexagon-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background-color: var(--bg-color);
+    
+  }
+  
+  .hexagon {
+    fill: var(--bg-color);
+    stroke: none;
+  }
+
+.glowing-object {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    background: radial-gradient(circle, var(--gloving-shadow), rgba(0, 0, 0, 0));
+    box-shadow: 0 0 50px var(--gloving-shadow);
+    animation: move 15s linear infinite alternate;
+    z-index: -2;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(-120%, 0);
+    }
+    25% {
+        transform: translate(0, -250%);
+    }
+    50% {
+        transform: translate(100%, -100%);
+    }
+    100% {
+      transform: translate(-120%, 50%);
+    }
+  }
+  

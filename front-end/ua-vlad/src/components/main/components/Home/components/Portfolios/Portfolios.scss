@@ -1,0 +1,138 @@
+.portfolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--main-portfolio-text-color);
+    margin: 2% 2% 3% 2%;
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+        text-shadow: var(--maim-portfolio-tittle-shadow);
+    }
+}
+.portfolio-item-cards {
+    display: flex;
+    width: 96%;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    a {
+        width: 45%;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        background-color: var(--bg-content);
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        border-radius: 10px;
+        h3 {
+            margin-left: 2%;
+            margin-bottom: 1%;
+            align-self: flex-start;
+            font-size: 1.5rem;
+        }
+        .imgContainer {
+            width: 100%;
+            height: 70%;
+            border-radius: 10px;
+            overflow: hidden;
+            img {
+                width: 100%;
+                height: 100%;
+                align-self: center;
+                border-radius: 10px;
+                transition: transform 0.3s ease-in-out;
+            }
+        }
+        .portfolio-imem-footer {
+            width: 96%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1rem;
+            margin-top: 1%;
+            .MuiRating-icon {
+                svg {
+                    fill: var(--main-portfolio-rating-on);
+                }
+            }
+            .MuiRating-iconEmpty {
+                svg {
+                    fill: var(--main-portfolio-rating-off);
+                }
+            }
+        }
+        &:hover {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+  
+  .portfolio-show-more-btn {
+    width: 40%;
+    display: block;
+    padding: .5% 1.5%;
+    border: 2px solid var(--main-portfolio-btn-border-color);
+    border-radius: 5px;
+    color: var(--main-portfolio-text-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: .5s;
+    &:hover {
+        background-color: var(--main-portfolio-btn-color-hover);
+        color: var(--main-portfolio-btn-text-color);
+        transform: scale(1.05);
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .portfolio-item-cards {
+        a {
+            h3 {
+                font-size: 1.3rem;
+            }
+            .portfolio-imem-footer {
+                font-size: .9rem;
+            }
+        }
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .portfolio-item-cards {
+        a {
+            h3 {
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .MuiRating-icon {
+        font-size: 1.1rem;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    .portfolio-item-cards {
+        a {
+            width: 80%;
+        }
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .portfolio-item-cards {
+        a {
+            width: 96%;
+        }
+    }
+    .portfolio-show-more-btn {
+        width: 80%;
+    }
+  }
+  
+  

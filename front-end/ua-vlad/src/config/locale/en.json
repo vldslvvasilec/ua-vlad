@@ -1,0 +1,87 @@
+{
+  "languageNames": {
+    "en": "English",
+    "cs": "Czech",
+    "ru": "Russian",
+    "uk": "Ukrainian"
+  },
+    "logoText": "Web development",
+    "contact us": "Contact Us",
+    
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "testimonials": "Testimonials",
+    "contacts": "Contacts",
+    
+    "home-page-tittle1": "Your Partner in Web Development",
+    "home-page-description1": "From simple websites to complex web applications — we bring ideas to life using the best technologies.",
+    "home-page-tittle2": "We create unique web solutions for your business",
+    "home-page-description2": "We create unique web solutions for your business",
+    "home-page-tittle3": "Custom websites built with clean code",
+    "home-page-description3": "We create projects from scratch using React, SCSS, Python, ensuring high performance and reliability.",
+
+    "works-tittle": "Our Projects", 
+
+    "choose-us-tittle": "Why Choose Us?",
+    "choose-us-personalized-approach-tittle": "Personalized Approach",
+    "choose-us-personalized-approach-description": "We create websites that perfectly match your goals and requirements, starting from clean code.",
+    "choose-us-modern-technologies-tittle": "Modern Technologies",
+    "choose-us-modern-technologies-description": "We use cutting-edge tools and technologies: React, SCSS, Python, PostgreSQL to build high-performance and scalable solutions.",
+    "choose-us-responsive-design-tittle": "Responsive Design",
+    "choose-us-responsive-design-description": "Your website will look great and work smoothly on any device thanks to our well-thought-out responsive design.",
+    "choose-us-multilingual-support-tittle": "Multilingual Support",
+    "choose-us-multilingual-support-description": "We develop websites with multilingual support to help your business reach a global audience.",
+    "choose-us-reliable-hosting-tittle": "Reliable Hosting",
+    "choose-us-reliable-hosting-description": "We deploy projects on AWS and GCP, ensuring security and stability for your website.",
+    "choose-us-SEO-optimization-tittle": "SEO Optimization",
+    "choose-us-SEO-optimization-description": "We take into account the latest SEO trends to make your website visible in search engines and attract organic traffic.",
+    "choose-us-expertise-and-professionalism-tittle": "Expertise and Professionalism",
+    "choose-us-expertise-and-professionalism-description": "Our strong technical expertise and attention to detail guarantee high quality and longevity for your web solutions.",
+  
+    "show-more": "Show more",
+
+    "contacts-tittle": "Our Contacts",
+    "about-us-form-tittle": "Contact Us",
+    "about-us-form-name": "Name:",
+    "about-us-form-email": "Email:",
+    "about-us-form-subject": "Message:",
+    "about-us-form-submit": "Send",
+    "about-us-form-placeholder-name": "Enter your name",
+    "about-us-form-placeholder-email": "Enter your email",
+    "about-us-form-placeholder-subject": "Enter your message",
+    "about-us-form-error": "This field must be filled in",
+    "about-us-form-error-email": "Enter a valid email",
+
+    "about-us-error_sending": "An error occurred while sending the message.",
+    "about-us-email_not_exist": "Dear {{name}}, the email {{email}} does not exist.",
+    "about-us-message_delivered": "Dear {{name}}, your message has been successfully delivered!",
+
+    "about-us-tittle": "Our Team",
+    "about-us-ourTeam": "Our IT team creates innovative solutions by implementing modern technologies for your business.",
+    "about-us-name": "Vladyslav",
+    "about-us-prof": "Full-stack Web Developer",
+    "about-us-skills": "Skills",
+    "about-us-button-on": "Learn more",
+    "about-us-button-of": "Hide",
+    "about-us-comments-button-on": "Read more",
+    "about-us-comments-button-off": "Show less",
+    "about-us-comments-author": "Author:",
+
+    "testimonials-tittle": "Testimonials",
+    "testimonials-form-tittle": "Submit Your Review",
+    "testimonials-form-name": "Name:",
+    "testimonials-form-email": "Email:",
+    "testimonials-form-subject": "Message:",
+    "testimonials-form-submit": "Send",
+    "testimonials-form-placeholder-name": "Enter your name",
+    "testimonials-form-placeholder-email": "Enter your email",
+    "testimonials-form-placeholder-subject": "Enter your message",
+    "testimonials-form-error": "This field must be filled in",
+    "testimonials-form-error-email": "Enter a valid email",
+
+    "testimonials-error_sending": "An error occurred while submitting your review.",
+    "testimonials-email_not_exist": "Dear {{name}}, the e-mail {{email}} does not exist.",
+    "testimonials-message_delivered": "Dear {{name}}, your review has been successfully delivered!"
+  }
+  

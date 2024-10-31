@@ -1,0 +1,40 @@
+.start-loader {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--loader-color);
+    background-color: var(--loader-bg-color);
+}
+.loading-dots {
+    font-size: 2rem;
+    color: var(--loader-color);
+    &::after {
+        content: '...';
+        display: inline-block;
+        animation: dots 1.8s steps(3, end) infinite;
+    }
+}
+  
+  @keyframes dots {
+    0%, 20% {
+      content: '';
+    }
+    40% {
+      content: '.';
+    }
+    60% {
+      content: '..';
+    }
+    80%, 100% {
+      content: '...';
+    }
+  }
+  
+@media screen and (max-width: 452px) {
+    .loading-dots {
+        font-size: 1.2rem;
+    }
+}

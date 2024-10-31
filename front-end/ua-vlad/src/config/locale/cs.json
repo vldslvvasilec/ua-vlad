@@ -1,0 +1,87 @@
+{
+  "languageNames": {
+    "en": "Angličtina",
+    "cs": "Čeština",
+    "ru": "Ruština",
+    "uk": "Ukrajinština"
+  },
+    "logoText": "Tvorba webů",
+    "contact us": "Kontaktujte nás",
+
+    "home": "Domov",
+    "portfolio": "Portfolio",
+    "services": "Služby",
+    "testimonials": "Reference",
+    "contacts": "Kontakty",
+
+    "home-page-tittle1": "Váš partner ve světě webového vývoje",
+    "home-page-description1": "Od jednoduchých webových stránek po složité webové aplikace – přivádíme nápady k životu s využitím nejlepších technologií.",
+    "home-page-tittle2": "Vytváříme jedinečná webová řešení pro vaše podnikání",
+    "home-page-description2": "Moderní technologie, responzivní design a spolehlivý hosting pro úspěšnou online přítomnost.",
+    "home-page-tittle3": "Individuální webové stránky na čistém kódu",
+    "home-page-description3": "Vytváříme projekty od základu s využitím React, SCSS, Python, zajišťující vysoký výkon a spolehlivost.",
+
+    "works-tittle": "Naše projekty", 
+
+    "choose-us-tittle": "Proč si vybrat nás?",
+    "choose-us-personalized-approach-tittle": "Individuální přístup",
+    "choose-us-personalized-approach-description": "Vytváříme webové stránky, které dokonale odpovídají vašim cílům a požadavkům, s použitím čistého kódu.",
+    "choose-us-modern-technologies-tittle": "Moderní technologie",
+    "choose-us-modern-technologies-description": "Používáme nejmodernější nástroje a technologie: React, SCSS, Python, PostgreSQL, abychom vytvořili vysoce výkonná a škálovatelná řešení.",
+    "choose-us-responsive-design-tittle": "Responzivní design",
+    "choose-us-responsive-design-description": "Vaše webová stránka bude vypadat skvěle a fungovat bezchybně na jakémkoli zařízení díky promyšlenému responzivnímu designu.",
+    "choose-us-multilingual-support-tittle": "Podpora více jazyků",
+    "choose-us-multilingual-support-description": "Vyvíjíme weby s podporou více jazyků, aby vaše firma mohla oslovit globální publikum.",
+    "choose-us-reliable-hosting-tittle": "Spolehlivý hosting",
+    "choose-us-reliable-hosting-description": "Nasazujeme projekty na AWS a GCP, zajišťujeme bezpečnost a stabilitu vašeho webu.",
+    "choose-us-SEO-optimization-tittle": "SEO optimalizace",
+    "choose-us-SEO-optimization-description": "Bereme v úvahu nejnovější trendy v SEO, aby byl váš web viditelný ve vyhledávačích a přitahoval organickou návštěvnost.",
+    "choose-us-expertise-and-professionalism-tittle": "Odbornost a profesionalita",
+    "choose-us-expertise-and-professionalism-description": "Naše silná technická odbornost a pozornost k detailům zaručují vysokou kvalitu a dlouhověkost vašich webových řešení.",
+
+    "show-more": "Zobrazit více",
+
+    "contacts-tittle": "Naše kontakty",
+    "about-us-form-tittle": "Kontaktujte nás",
+    "about-us-form-name": "Jméno:",
+    "about-us-form-email": "Email:",
+    "about-us-form-subject": "Zpráva:",
+    "about-us-form-submit": "Odeslat",
+    "about-us-form-placeholder-name": "Zadejte své jméno",
+    "about-us-form-placeholder-email": "Zadejte svůj email",
+    "about-us-form-placeholder-subject": "Zadejte svou zprávu",
+    "about-us-form-error": "Toto pole musí být vyplněno",
+    "about-us-form-error-email": "Zadejte platný e-mail",
+
+    "about-us-error_sending": "Při odesílání zprávy došlo k chybě.",
+    "about-us-email_not_exist": "Vážený {{name}}, e-mail {{email}} neexistuje.",
+    "about-us-message_delivered": "Vážený {{name}}, vaše zpráva byla úspěšně doručena!",
+
+    "about-us-tittle": "Náš tým",
+    "about-us-ourTeam": "Náš IT tým vytváří inovativní řešení pomocí moderních technologií pro váš byznys.",
+    "about-us-name": "Vladislav",
+    "about-us-prof": "Full-stack Web Developer",
+    "about-us-skills": "Dovednosti",
+    "about-us-button-on": "Více informací",
+    "about-us-button-of": "Skrýt",
+    "about-us-comments-button-on": "Číst dál",
+    "about-us-comments-button-off": "Zobrazit méně",
+    "about-us-comments-author": "Autor:",
+
+    "testimonials-tittle": "Reference o nás",
+    "testimonials-form-tittle": "Odeslat recenzi",
+    "testimonials-form-name": "Jméno:",
+    "testimonials-form-email": "Email:",
+    "testimonials-form-subject": "Zpráva:",
+    "testimonials-form-submit": "Odeslat",
+    "testimonials-form-placeholder-name": "Zadejte své jméno",
+    "testimonials-form-placeholder-email": "Zadejte svůj email",
+    "testimonials-form-placeholder-subject": "Zadejte svou zprávu",
+    "testimonials-form-error": "Toto pole musí být vyplněno",
+    "testimonials-form-error-email": "Zadejte platný e-mail",
+
+    "testimonials-error_sending": "Došlo k chybě při odesílání vašeho hodnocení.",
+    "testimonials-email_not_exist": "Vážený {{name}}, e-mail {{email}} neexistuje.",
+    "testimonials-message_delivered": "Vážený {{name}}, vaše hodnocení bylo úspěšně doručeno!"
+}
+  
