@@ -1,8 +1,24 @@
+# Используем легковесный образ Python
 FROM python:3.11.9-slim
 
-COPY requirements.txt requirements.txt
-RUN pip install -r requirements.txt
+# Обновляем pip
+RUN pip install --upgrade pip
 
+# Устанавливаем системные зависимости для psycopg2
+RUN apt-get update && \
+    apt-get install -y --no-install-recommends \
+    gcc \
+    libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# Копируем файл requirements.txt
+COPY requirements.txt requirements.txt
+
+# Устанавливаем зависимости из requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Копируем весь проект в контейнер
 COPY . .
 
-CMD [ "python", "uaVlad/manage.py", "runserver", "0.0.0.0:8083" ]
+# Указываем команду для запуска приложения
+CMD ["python", "uaVlad/manage.py", "runserver", "0.0.0.0:8083"]
