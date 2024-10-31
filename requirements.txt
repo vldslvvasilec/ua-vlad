@@ -1,0 +1,16 @@
+asgiref==3.8.1
+Django==5.1.2
+django-cors-headers==4.5.0
+django-environ==0.11.2
+django-modeltranslation==0.19.10
+djangorestframework==3.15.2
+dnspython==2.7.0
+pillow==11.0.0
+psycopg2==2.9.10
+py3dns==4.0.2
+python-dotenv==1.0.1
+python-http-client==3.3.7
+sendgrid==6.11.0
+sqlparse==0.5.1
+starkbank-ecdsa==2.2.0
+validate-email-address==1
