@@ -4,7 +4,7 @@ FROM python:3.11.9-slim
 # Обновляем pip
 RUN pip install --upgrade pip
 
-# Устанавливаем системные зависимости для psycopg2
+# Устанавливаем системные зависимости
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
     gcc \
