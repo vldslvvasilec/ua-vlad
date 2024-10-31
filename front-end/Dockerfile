@@ -5,7 +5,7 @@ FROM node:14 AS build
 WORKDIR /usr/src/app
 
 # Копирование файлов package.json и package-lock.json
-COPY package*.json ./
+COPY ua-vlad/package*.json ./
 
 # Установка зависимостей
 RUN npm install
