@@ -1,5 +1,5 @@
 # Используем легковесный образ Python
-FROM python:3.11.9-slim
+FROM python:3.12.3
 
 # Обновляем pip
 RUN pip install --upgrade pip
