@@ -20,7 +20,7 @@ services:
 
       dockerfile: Dockerfile  # Имя Dockerfile для бэкенда
     env_file:
-      - ../.env 
+      - .env 
     ports:
       - "8084:8084"  # Прокси порт 8083 к 8083 на контейнере
     networks:
