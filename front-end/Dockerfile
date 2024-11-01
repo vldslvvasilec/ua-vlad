@@ -1,32 +1,31 @@
-# Этап сборки с использованием Node.js
 FROM node:14 AS build
 
-# Установка рабочей директории
+# Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /usr/src/app
 
-# Копирование файлов package.json и package-lock.json
+# Копируем package.json и package-lock.json
 COPY ua-vlad/package*.json ./
 
-# Установка зависимостей
+# Устанавливаем зависимости
 RUN npm install
 
-# Копирование всех остальных файлов (например, исходный код приложения)
-COPY . .
+# Копируем весь код проекта
+COPY ua-vlad/ .
 
-# Сборка приложения
+# Сборка проекта
 RUN npm run build
 
-# Этап развертывания с использованием Nginx
+# Используем nginx для раздачи собранных файлов
 FROM nginx:stable-alpine
 
-# Копирование собранных файлов из этапа сборки
+# Копируем собранные файлы из предыдущего контейнера в nginx
 COPY --from=build /usr/src/app/dist /usr/share/nginx/html
 
-# Копирование конфигурации Nginx, если она у вас есть
+# Копируем конфигурацию nginx, если необходимо
 COPY --from=build /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
 
-# Открытие порта 80 для доступа
+# Открываем порт
 EXPOSE 80
 
-# Запуск Nginx в фоновом режиме
+# Запускаем nginx
 CMD ["nginx", "-g", "daemon off;"]
