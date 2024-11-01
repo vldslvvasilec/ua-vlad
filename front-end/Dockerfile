@@ -1,4 +1,4 @@
-FROM node:14 AS build
+FROM node:18 AS build
 
 # Устанавливаем рабочую директорию внутри контейнера
 WORKDIR /usr/src/app
