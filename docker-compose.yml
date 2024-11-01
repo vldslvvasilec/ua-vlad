@@ -27,7 +27,7 @@ services:
       - uaVlad
   frontend:
     build:
-      context: ./front-end  # Путь к директории с Dockerfile фронтенда
+      context: ./front-end/ua-vlad  # Путь к директории с Dockerfile фронтенда
       dockerfile: Dockerfile  # Имя Dockerfile для фронтенда
     ports:
       - "8082:8082"
