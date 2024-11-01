@@ -18,7 +18,7 @@ services:
     build:
       context: ./back-end  # Путь к директории с Dockerfile бэкенда
       env_file:
-      - ../.env
+      - .env
       dockerfile: Dockerfile  # Имя Dockerfile для бэкенда
     ports:
       - "8084:8084"  # Прокси порт 8083 к 8083 на контейнере
