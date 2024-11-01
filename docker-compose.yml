@@ -19,7 +19,7 @@ services:
       context: ./back-end  # Путь к директории с Dockerfile бэкенда
       dockerfile: Dockerfile  # Имя Dockerfile для бэкенда
     ports:
-      - "8083:8083"  # Прокси порт 8083 к 8083 на контейнере
+      - "8084:8084"  # Прокси порт 8083 к 8083 на контейнере
     networks:
       - uaVlad
   frontend:
