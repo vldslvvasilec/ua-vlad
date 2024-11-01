@@ -22,7 +22,7 @@ FROM nginx:stable-alpine
 COPY --from=build /usr/src/app/dist /usr/share/nginx/html
 
 # Копируем конфигурацию nginx, если необходимо
-COPY --from=build /usr/src/app/nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Открываем порт
 EXPOSE 80
