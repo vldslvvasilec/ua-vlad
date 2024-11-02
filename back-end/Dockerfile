@@ -1,6 +1,7 @@
 # Используем легковесный образ Python
 FROM python:3.12.3
 
+WORKDIR /uaVlad
 # Обновляем pip
 RUN pip install --upgrade pip
 
