@@ -1,4 +1,10 @@
 services:
+  db:
+    image: postgres:latest
+    environment:
+      - POSTGRES_DB=ua-vlad
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=Tel212140
   frontend:
     env_file:
       - .env
