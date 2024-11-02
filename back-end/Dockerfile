@@ -6,10 +6,10 @@ RUN pip install --upgrade pip
 
 # Устанавливаем системные зависимости
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
-    gcc \
-    libpq-dev \
-    && rm -rf /var/lib/apt/lists/*
+apt-get install -y --no-install-recommends \
+gcc \
+libpq-dev \
+&& rm -rf /var/lib/apt/lists/*
 
 # Копируем файл requirements.txt
 COPY requirements.txt requirements.txt
@@ -17,6 +17,7 @@ COPY requirements.txt requirements.txt
 # Устанавливаем зависимости из requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
+WORKDIR /uaVlad
 # Копируем весь проект в контейнер
 COPY . .
 
