@@ -2,11 +2,9 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 
 const IPAddressComponent = ({ setResponseData }) => {
-  console.log(`${import.meta.env.VITE_IPINFO_API_KEY}`)
   useEffect(() => {
     const fetchIP = async () => {
       try {
-
         const response = await axios.get(`https://ipinfo.io?token=${import.meta.env.VITE_IPINFO_API_KEY}`);
         const ipAddress = response.data.ip;
         const userLanguage = navigator.language || navigator.userLanguage;
