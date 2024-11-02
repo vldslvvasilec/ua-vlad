@@ -2,8 +2,8 @@ import React, { useEffect } from 'react';
 import axios from 'axios';
 
 const IPAddressComponent = ({ setResponseData }) => {
+  console.log(`${import.meta.env.VITE_IPINFO_API_KEY}`)
   useEffect(() => {
-    console.log(`${import.meta.env.VITE_IPINFO_API_KEY}`)
     const fetchIP = async () => {
       try {
 

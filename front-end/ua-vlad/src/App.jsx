@@ -11,6 +11,7 @@ import HexagonGrid from './config/HexagonGrid';
 import './app.scss';
 
 function App() {
+  console.log("Hello App")
   const [responseData, setResponseData] = useState(null);
   const [isLoaderVisible, setIsLoaderVisible] = useState(true);
   const homeRef = useRef(null);
