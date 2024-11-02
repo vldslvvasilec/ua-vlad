@@ -1,4 +1,7 @@
 services:
+  env_file:
+    - .env
+
   frontend:
     build:
       context: ./front-end
