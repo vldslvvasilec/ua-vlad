@@ -17,7 +17,6 @@ COPY requirements.txt requirements.txt
 # Устанавливаем зависимости из requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-WORKDIR /uaVlad
 # Копируем весь проект в контейнер
 COPY . .
 
