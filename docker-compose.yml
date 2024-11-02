@@ -1,6 +1,6 @@
 services:
   db:
-    image: postgres:latest
+    image: postgres
     environment:
       - POSTGRES_DB=ua-vlad
       - POSTGRES_USER=postgres
@@ -20,10 +20,16 @@ services:
     env_file:
       - .env
     environment:
+      DJANGO_DB_NAME: ua-vlad
+      DJANGO_DB_USER: postgres
+      DJANGO_DB_PASSWORD: Tel202450
       DJANGO_DB_HOST: db
+      DJANGO_DB_PORT: 5432
     build:
       context: ./back-end
       dockerfile: Dockerfile
+    depends_on:
+      - db
     ports:
       - "8084:8084"
     networks:
