@@ -19,9 +19,9 @@ environ.Env.read_env(ENV_PATH / '.env')
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = [env("BACKEND_IP"), "10.8.0.10", "localhost", "172.29.0.20:8084"]
+ALLOWED_HOSTS = [env("BACKEND_IP"), "10.8.0.10", "localhost", "172.29.0.20"]
 
 
 # Application definition
