@@ -143,6 +143,8 @@ MODELTRANSLATION_LANGUAGES = ('en', 'cs', 'uk', 'ru')
 CORS_ALLOWED_ORIGINS = [
     "https://172.29.0.10:8082",
     "https://10.8.0.10:8082",
+    "http://172.29.0.10:8082",
+    "http://10.8.0.10:8082",
     
 ]
 
