@@ -140,7 +140,7 @@ LANGUAGES = [
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'  # Основной язык
 MODELTRANSLATION_LANGUAGES = ('en', 'cs', 'uk', 'ru')
 
-CORS_ALLOWED_ORIGINS = [env("WEB_IP_FRONTEND"), "http://172.29.0.10:8082"]
+CORS_ALLOWED_ORIGINS = ["http://172.29.0.10:8082"]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR.parent.parent)
