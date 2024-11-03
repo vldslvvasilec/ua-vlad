@@ -19,9 +19,9 @@ environ.Env.read_env(ENV_PATH / '.env')
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = [env("BACKEND_IP"), "10.8.0.10", "localhost", "172.29.0.20"]
+ALLOWED_HOSTS = [env("BACKEND_IP"), "localhost", "172.29.0.20"]
 
 
 # Application definition
@@ -145,7 +145,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://10.8.0.10:8082",
     
 ]
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
 
 
 
