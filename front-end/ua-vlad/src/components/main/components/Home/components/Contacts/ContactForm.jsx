@@ -64,47 +64,6 @@ export default function ContactForm() {
     }
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setIsLoading(true);
-  //   setStatusMessage('');
-  //   setIsError(false);
-
-  //   // Имитация отправки данных на сервер
-  //   setTimeout(() => {
-  //     const isValidEmail = validateEmail(email);
-
-  //     if (isValidEmail && name.trim() && message.trim()) {
-  //       setStatusMessage(t('about-us-message_delivered', { name }));
-  //       setIsSubmitted(true);
-  //       setIsError(false);
-  //       setName('');
-  //       setEmail('');
-  //       setMessage('');
-        
-  //       // Сбрасываем состояние isTouched
-  //       setIsTouched({
-  //         name: false,
-  //         email: false,
-  //         message: false
-  //       });
-  //     } else if (!isValidEmail) {
-  //       setStatusMessage(t('about-us-email_not_exist', { name, email }));
-  //       setIsError(true);
-  //     } else {
-  //       setStatusMessage(t('about-us-error_sending'));
-  //       setIsError(true);
-  //     }
-
-  //     setIsLoading(false);
-
-  //     setTimeout(() => {
-  //       setIsSubmitted(false);
-  //       setIsError(false);
-  //     }, 5000);
-  //   }, 3000); // Имитация задержки в 3 секунды для демонстрации загрузки
-  // };
-
   const isSubmitDisabled = !name.trim() || !validateEmail(email) || !message.trim();
 
   const handleSubmit = async (e) => {
