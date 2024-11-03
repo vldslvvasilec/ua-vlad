@@ -145,7 +145,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://10.8.0.10:8082",
     
 ]
-CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 
 
