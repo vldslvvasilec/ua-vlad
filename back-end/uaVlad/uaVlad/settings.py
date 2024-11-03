@@ -21,7 +21,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [env("BACKEND_IP"), "10.8.0.10", "localhost"]
+ALLOWED_HOSTS = [env("BACKEND_IP"), "10.8.0.10", "localhost", "172.29.0.20"]
 
 
 # Application definition
@@ -140,8 +140,7 @@ LANGUAGES = [
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'  # Основной язык
 MODELTRANSLATION_LANGUAGES = ('en', 'cs', 'uk', 'ru')
 
-CORS_ALLOWED_ORIGINS = ["http://172.29.0.10:8082"]
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOWED_ORIGINS = ["http://172.29.0.10:8082", "*", "https://172.29.0.10:8082"]
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR.parent.parent)

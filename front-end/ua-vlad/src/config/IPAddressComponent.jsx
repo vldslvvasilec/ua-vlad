@@ -26,6 +26,12 @@ const IPAddressComponent = ({ setResponseData }) => {
         setResponseData(postResponse.data);
       } catch (error) {
         console.error('Error fetching IP data:', error);
+        if (error.response) {
+          console.error('Response data:', error.response.data);
+          console.error('Response status:', error.response.status);
+        } else {
+          console.error('Error message:', error.message);
+        }
       }
     };
 
