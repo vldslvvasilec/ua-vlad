@@ -19,10 +19,12 @@ const IPAddressComponent = ({ setResponseData }) => {
           platform: platform,
           unique_identifier: uniqueBrowserIdentifier,
         }
-        console.log(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`)
-        console.log(responceData)
+        console.log(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`);
+        console.log(responceData);
+        console.log("test");
         const postResponse = await axios.post("http://10.8.0.10:8084/api/user-information/", responceData);
-        console.log(postResponse)
+        console.log("test after");
+        console.log(postResponse);
         setResponseData(postResponse.data);
       } catch (error) {
         console.error('Error fetching IP data:', error);
