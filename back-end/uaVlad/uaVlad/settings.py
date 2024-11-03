@@ -23,6 +23,7 @@ DEBUG = False
 
 ALLOWED_HOSTS = [env("BACKEND_IP"), "10.8.0.10", "localhost"]
 print(ALLOWED_HOSTS)
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -141,7 +142,7 @@ LANGUAGES = [
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'  # Основной язык
 MODELTRANSLATION_LANGUAGES = ('en', 'cs', 'uk', 'ru')
 
-CORS_ALLOWED_ORIGINS = [env("WEB_IP_FRONTEND")]
+CORS_ALLOWED_ORIGINS = [env("WEB_IP_FRONTEND"), "http://172.29.0.10:8082"]
 print(CORS_ALLOWED_ORIGINS)
 
 MEDIA_URL = '/media/'
