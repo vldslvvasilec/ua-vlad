@@ -21,7 +21,7 @@ const IPAddressComponent = ({ setResponseData }) => {
         }
         console.log(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`)
         console.log(responceData)
-        const postResponse = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`, responceData);
+        const postResponse = await axios.post("http://10.8.0.10:8084/api/user-information/", responceData);
         console.log(postResponse)
         setResponseData(postResponse.data);
       } catch (error) {
