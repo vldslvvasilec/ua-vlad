@@ -12,13 +12,17 @@ const IPAddressComponent = ({ setResponseData }) => {
         const platform = navigator.platform;
         const uniqueBrowserIdentifier = `${userAgent}-${userLanguage}-${platform}`;
         
-        const postResponse = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`, {
+        const responceData = {
           ip_address: ipAddress,
           browser_language: userLanguage,
           user_agent: userAgent,
           platform: platform,
           unique_identifier: uniqueBrowserIdentifier,
-        });
+        }
+        console.log(responceData)
+        console.log(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`)
+
+        const postResponse = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`, responceData);
 
         setResponseData(postResponse.data);
       } catch (error) {
