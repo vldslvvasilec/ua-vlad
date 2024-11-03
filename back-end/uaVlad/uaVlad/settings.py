@@ -145,10 +145,6 @@ CORS_ALLOWED_ORIGINS = [
     "http://10.8.0.10:8082",
     
 ]
-# CORS_ALLOW_ALL_ORIGINS = True
-
-
-
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR.parent.parent)
