@@ -18,22 +18,16 @@ const IPAddressComponent = ({ setResponseData }) => {
           user_agent: userAgent,
           platform: platform,
           unique_identifier: uniqueBrowserIdentifier,
-        };
-
-        console.log(`Sending to ${import.meta.env.VITE_IP_BACKEND}/api/user-information/`);
-        console.log('Data to send:', responceData);
-
-        const postResponse = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`, responceData);
-        console.log('Response from server:', postResponse.data);
+        }
+        console.log(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`)
+        console.log(responceData)
+        // const postResponse = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`, responceData);
+        const postResponse = {"portfolios":[],"team_users":[],"comments":[]}
+        console.log(postResponse)
         setResponseData(postResponse.data);
       } catch (error) {
         console.error('Error fetching IP data:', error);
-        if (error.response) {
-          console.error('Response data:', error.response.data);
-          console.error('Response status:', error.response.status);
-        } else {
-          console.error('Error message:', error.message);
-        }
+        
       }
     };
 

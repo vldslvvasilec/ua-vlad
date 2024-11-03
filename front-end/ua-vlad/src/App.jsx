@@ -34,7 +34,6 @@ function App() {
       return () => clearTimeout(timer);
     }
   }, [responseData]);
-  console.log(responseData)
 
   return (
     <>
