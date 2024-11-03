@@ -140,7 +140,10 @@ LANGUAGES = [
 MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'  # Основной язык
 MODELTRANSLATION_LANGUAGES = ('en', 'cs', 'uk', 'ru')
 
-CORS_ALLOWED_ORIGINS = [env("VITE_IP_BACKEND")]
+CORS_ALLOWED_ORIGINS = [
+    "http://172.29.0.10:8082",
+]
+
 
 
 MEDIA_URL = '/media/'

@@ -18,11 +18,13 @@ const IPAddressComponent = ({ setResponseData }) => {
           user_agent: userAgent,
           platform: platform,
           unique_identifier: uniqueBrowserIdentifier,
-        }
-        console.log(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`)
-        console.log(responceData)
+        };
+
+        console.log(`Sending to ${import.meta.env.VITE_IP_BACKEND}/api/user-information/`);
+        console.log('Data to send:', responceData);
+
         const postResponse = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`, responceData);
-        console.log(postResponse)
+        console.log('Response from server:', postResponse.data);
         setResponseData(postResponse.data);
       } catch (error) {
         console.error('Error fetching IP data:', error);
