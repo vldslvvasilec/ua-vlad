@@ -12,7 +12,6 @@ const IPAddressComponent = ({ setResponseData }) => {
         const userAgent = navigator.userAgent;
         const platform = navigator.platform;
         const uniqueBrowserIdentifier = `${userAgent}-${userLanguage}-${platform}`;
-        console.log(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`)
         
         const postResponse = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/user-information/`, {
           ip_address: ipAddress,
@@ -21,7 +20,6 @@ const IPAddressComponent = ({ setResponseData }) => {
           platform: platform,
           unique_identifier: uniqueBrowserIdentifier,
         });
-        console.log(postResponse)
 
         setResponseData(postResponse.data);
       } catch (error) {

@@ -21,7 +21,7 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["10.8.0.10", "localhost", "backend"]
+ALLOWED_HOSTS = [env("BACKEND_IP")]
 
 
 # Application definition
