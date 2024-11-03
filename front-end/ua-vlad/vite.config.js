@@ -6,6 +6,9 @@ import dotenv from 'dotenv';
 dotenv.config({ path: '../../.env' });
 
 export default defineConfig({
+  server: {
+    port: 8082, // Установите нужный порт
+  },
   plugins: [react()],
   build: {
     cssCodeSplit: true, // Включаем разделение CSS для более эффективной загрузки
