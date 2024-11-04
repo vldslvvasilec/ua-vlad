@@ -37,12 +37,11 @@ export default function Team({ team }) {
         const skillsKey = `userSkills_${i18n.language}`;
         const skillsList = userSkills[skillsKey] ? userSkills[skillsKey].split('.').filter(skill => skill.trim() !== '') : [];
         const userImage = user.userFoto.replace('/media', '');
-        console.log(userImage);
         return (
           <div key={index} className="user-card">
             <section className="user-content">
               <img
-                src={`${userImage}`}
+                src={`../../${userImage}`}
                 alt={`${userName} фото`}
                 className="user-photo"
               />
