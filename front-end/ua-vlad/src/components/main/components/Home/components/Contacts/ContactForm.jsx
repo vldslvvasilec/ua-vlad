@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import ClipLoader from 'react-spinners/ClipLoader';
 import useTypingEffect from '../../../../../../config/useTypingEffect';
 import axios from 'axios';
+import apiClient from '../../../../../../config/apiClient';
 import './Contacts.scss';
 
 export default function ContactForm() {
@@ -80,7 +81,7 @@ export default function ContactForm() {
     };
 
     try {
-      const response = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/contacts/`, contactsData);
+      const response = await apiClient.post(`/api/contacts/`, contactsData);
       
       // Обработка успешного ответа
       if (response.data && response.data.succes === 'OK') {

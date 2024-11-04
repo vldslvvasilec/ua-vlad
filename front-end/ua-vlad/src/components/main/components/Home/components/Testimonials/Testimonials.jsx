@@ -5,6 +5,7 @@ import ClipLoader from 'react-spinners/ClipLoader';
 import Coments from './Coments';
 import useTypingEffect from '../../../../../../config/useTypingEffect';
 import axios from 'axios';
+import apiClient from '../../../../../../config/apiClient';
 import './Testimonials.scss';
 
 export default function Testimonials({ refProp, coments }) {
@@ -76,7 +77,7 @@ export default function Testimonials({ refProp, coments }) {
     };
 
     try {
-      const response = await axios.post(`${import.meta.env.VITE_IP_BACKEND}/api/reviews/`, reviewData);
+      const response = await apiClient.post(`/api/reviews/`, reviewData);
       
       // Обработка успешного ответа
       if (response.data && response.data.succes === 'OK') {

@@ -36,12 +36,13 @@ export default function Team({ team }) {
 
         const skillsKey = `userSkills_${i18n.language}`;
         const skillsList = userSkills[skillsKey] ? userSkills[skillsKey].split('.').filter(skill => skill.trim() !== '') : [];
-
+        const userImage = user.userFoto
+        console.log(userImage)
         return (
           <div key={index} className="user-card">
             <section className="user-content">
               <img
-                src={`${import.meta.env.VITE_IP_BACKEND}${user.userFoto}`}
+                src={`${user.userFoto}`}
                 alt={`${userName} фото`}
                 className="user-photo"
               />
