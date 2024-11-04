@@ -11,7 +11,7 @@ function getCSRFToken() {
 
 // Создание инстанса axios
 const apiClient = axios.create({
-    baseURL: 'https://ua-vlad.com/api',
+    baseURL: 'https://ua-vlad.com',
     headers: {
         'Content-Type': 'application/json',
     },
