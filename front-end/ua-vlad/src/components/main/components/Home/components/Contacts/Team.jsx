@@ -41,7 +41,7 @@ export default function Team({ team }) {
           <div key={index} className="user-card">
             <section className="user-content">
               <img
-                src="/team_photos/team_photo.jpg"
+                src={`..${userImage}`}
                 alt={`${userName} фото`}
                 className="user-photo"
               />
