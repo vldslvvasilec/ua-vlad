@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import apiClient from './config/apiClient';
+import apiClient from './apiClient';
 
 const IPAddressComponent = ({ setResponseData }) => {
   useEffect(() => {
