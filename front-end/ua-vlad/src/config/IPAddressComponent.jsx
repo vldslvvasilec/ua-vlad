@@ -21,7 +21,8 @@ const IPAddressComponent = ({ setResponseData }) => {
         };
         const postResponse = await axios.post(`/api/user-information/`, responceData, {
           headers: {
-              'Content-Type': 'application/json'
+              'Content-Type': 'application/json',
+              'X-CSRFToken': csrfToken,
           }
         });
         setResponseData(postResponse.data);

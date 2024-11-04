@@ -21,7 +21,15 @@ SECRET_KEY = env("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [env("BACKEND_IP"), 'localhost', '127.0.0.1', 'backend', '10.8.0.10']
+ALLOWED_HOSTS = [
+    env("BACKEND_IP"), 
+    'localhost', 
+    '127.0.0.1', 
+    'backend', 
+    '10.8.0.10', 
+    'ua-vlad.com',
+    'www.ua-vlad.com',
+]
 
 
 # Application definition
@@ -141,6 +149,8 @@ MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'  # Основной язык
 MODELTRANSLATION_LANGUAGES = ('en', 'cs', 'uk', 'ru')
 
 CORS_ALLOWED_ORIGINS = [
+    "https://ua-vlad.com",
+    "http://ua-vlad.com",
     "https://172.29.0.10:8082",
     "https://10.8.0.10:8082",
     "http://172.29.0.10:8082",
