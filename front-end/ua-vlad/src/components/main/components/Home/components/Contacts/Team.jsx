@@ -36,7 +36,7 @@ export default function Team({ team }) {
 
         const skillsKey = `userSkills_${i18n.language}`;
         const skillsList = userSkills[skillsKey] ? userSkills[skillsKey].split('.').filter(skill => skill.trim() !== '') : [];
-        const userImage = user.userFoto.replace('/media', '');
+        const userImage = user.userFoto.replace('/media/', '');
         return (
           <div key={index} className="user-card">
             <section className="user-content">
