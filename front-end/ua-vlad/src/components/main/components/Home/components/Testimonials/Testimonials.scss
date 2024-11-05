@@ -132,6 +132,8 @@
         font-size: 2rem;
         svg {
             fill: var(--main-comments-rating-on);
+            stroke: var(--color-svg-stars); 
+            stroke-width: var(--border-svg-stars);
         }
     }
     .MuiRating-iconEmpty {

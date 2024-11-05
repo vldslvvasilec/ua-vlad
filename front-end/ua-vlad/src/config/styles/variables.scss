@@ -9,6 +9,8 @@
         --color-inst: #e1306c;
         --color-linkediln: #0077b5;
         --color-mail: #dd4b39;
+        --color-svg-stars: #000;
+        --border-svg-stars: .5px;
 
         --loader-bg-color: #fff;
         --loader-color: #3366ff;
@@ -38,7 +40,7 @@
         --contactUs-bg: #e6e6ff50;
         --contactUs-bg-hover: #d9d9ff;
 
-        --header-minimal-menu: #fffffb6;
+        --header-minimal-menu: rgba(250, 240, 240, .6);
 
         --main-home-text: var(--logo-text);
         --maim-home-tittle-shadow: 0 0 5px #6699ff, 0 0 10px #6699ff, 0 0 20px #6699ff;

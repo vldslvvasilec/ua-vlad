@@ -60,6 +60,8 @@
             .MuiRating-icon {
                 svg {
                     fill: var(--main-portfolio-rating-on);
+                    stroke: var(--color-svg-stars); 
+                    stroke-width: var(--border-svg-stars);
                 }
             }
             .MuiRating-iconEmpty {
