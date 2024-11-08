@@ -5,6 +5,7 @@ import './team.scss';
 
 export default function Team({ team }) {
   const { i18n } = useTranslation();
+  console.log(team);
 
   return (
     <div className="team-cards">
@@ -37,6 +38,7 @@ export default function Team({ team }) {
         const skillsKey = `userSkills_${i18n.language}`;
         const skillsList = userSkills[skillsKey] ? userSkills[skillsKey].split('.').filter(skill => skill.trim() !== '') : [];
         const userImage = user.userFoto.replace('/media', '');
+        console.log(userImage);
         return (
           <div key={index} className="user-card">
             <section className="user-content">

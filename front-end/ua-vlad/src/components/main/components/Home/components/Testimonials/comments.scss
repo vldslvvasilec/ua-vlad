@@ -58,6 +58,8 @@
     .MuiRating-iconEmpty {
         svg {
             fill: var(--main-comments-rating-off);
+            stroke: none;
+            stroke-width: 0;
         }
     }
 }
