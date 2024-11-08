@@ -49,7 +49,7 @@ function Header({ refs }) {
             <span>{t('logoText')}</span>
             </Link>
           </section>
-          <ContactUs handleContactsClick={handleContactsClick}/>
+          <ContactUs refs={refs} scrollToSection={scrollToSection}/>
           <section className="language-selector-wrap">
             <LanguageSelector />
           </section>
