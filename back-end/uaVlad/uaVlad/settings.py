@@ -157,13 +157,17 @@ CORS_ALLOWED_ORIGINS = [
     "http://10.8.0.10:8082",
     "http://172.29.0.10:8085",
     "http://10.8.0.10:8085",
-    
+    "http://localhost:8082",    
 ]
+CORS_ALLOW_ALL_ORIGINS = True
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR.parent.parent)
 
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
-
-CSRF_TRUSTED_ORIGINS = ['https://ua-vlad.com']
-CORS_ALLOW_CREDENTIALS = True
+if (env("MODE")) == "DEV":
+    DEBUG = True
+elif (env("MODE")) == "PROD":
+    DEBUG = False
+    SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+    CSRF_TRUSTED_ORIGINS = ['https://ua-vlad.com']
+    CORS_ALLOW_CREDENTIALS = True

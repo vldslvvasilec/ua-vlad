@@ -20,7 +20,10 @@ const IPAddressComponent = ({ setResponseData }) => {
           platform: platform,
           unique_identifier: uniqueBrowserIdentifier,
         };
-        const postResponse = await apiClient.post(`/api/user-information/`, responceData);
+        console.log('Current MODE:', import.meta.env.MODE);
+        const postResponse = import.meta.env.MODE === 'development'
+        ? await axios.post(`${import.meta.env.VITE_IP_BACKEND_DEV}/api/user-information/`, responceData)
+        : await apiClient.post(`/api/user-information/`, responceData);
         setResponseData(postResponse.data);
       } catch (error) {
         console.error('Error fetching IP data:', error);
