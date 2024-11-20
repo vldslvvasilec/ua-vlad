@@ -27,8 +27,14 @@ const useTypingEffect = (text, duration, id, threshold = 0.1) => {
       observer.observe(element);
     }
 
-    // Запускаем анимацию текста, когда элемент становится видимым
+    return () => {
+      observer.disconnect();
+    };
+  }, [id, threshold]);
+
+  useEffect(() => {
     if (isVisible) {
+      setDisplayedText(''); // Сброс текста при изменении `text`
       const totalCharacters = text.length;
       const intervalTime = duration / totalCharacters;
 
@@ -44,11 +50,7 @@ const useTypingEffect = (text, duration, id, threshold = 0.1) => {
 
       return () => clearInterval(typingInterval);
     }
-
-    return () => {
-      observer.disconnect();
-    };
-  }, [text, duration, isVisible, id, threshold]);
+  }, [text, duration, isVisible]); // Добавляем `text` в зависимости
 
   return displayedText;
 };
